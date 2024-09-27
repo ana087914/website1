@@ -1,0 +1,156 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;  /* Updated font */
+}
+
+body {
+    background-color: #0f0f12;
+    color: white;
+    line-height: 1.6;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #0d0d10;
+}
+
+.logo span {
+    color: #ff80ff;
+    font-weight: 700;  /* Bold weight for logo emphasis */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-weight: 600;  /* Semi-bold for nav links */
+}
+
+.nav-links a:hover {
+    color: #ff80ff;
+}
+
+.login-btn {
+    background-color: #1f1f22;
+    padding: 8px 16px;
+    border-radius: 8px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    font-weight: 700;  /* Bold for hero headline */
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+    color: #cfcfcf;
+    font-weight: 400;  /* Regular for subtitle */
+}
+
+.btn-get-started {
+    background: linear-gradient(90deg, #ff80ff, #ff0080);
+    padding: 10px 30px;
+    border-radius: 8px;
+    color: white;
+    text-decoration: none;
+    transition: background 0.3s;
+    font-weight: 600;  /* Semi-bold for button */
+}
+
+.btn-get-started:hover {
+    background: linear-gradient(90deg, #ff0080, #ff80ff);
+}
+
+/* Projects Section */
+.projects {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.projects h2 {
+    margin-bottom: 20px;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.tags {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.tags span {
+    background-color: #1a1a1d;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: 600;  /* Semi-bold for tags */
+}
+
+.projects-gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.projects-gallery img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* Full Journey Section */
+.journey {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.journey ul {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.journey li {
+    color: #8f8f8f;
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: 400;  /* Regular for list items */
+}
+
+.journey .highlight {
+    color: #ff80ff;
+    font-weight: 600;  /* Semi-bold for highlight */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .projects-gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+}
